@@ -1,13 +1,13 @@
-name : Foundation5/github pages/Jykill starter
-brand : My Project
-description : This is the description of my project
+\name : Foundation5/github pages/Jykill starter
+brand : Dice Media Group
+description : Landing page for Dice Media Group
 keyword : 
-url : http://daigofuji.github.io/jekyll-foundation-6-starter/
-email : daigo@daigofujiwara.com
+url : https://dice-media-group.github.io/
+email : carl@dicemediagroup.com
 twitter : DaigoFuji
 github : DaigoFuji
-author : Daigo Fujiwara
-year : 2016
+author : Dice Media Group
+year : 2018
 markdown : kramdown
 exclude :
   - node_modules
