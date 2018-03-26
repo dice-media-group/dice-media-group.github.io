@@ -1,0 +1,54 @@
+---
+layout: default
+title: Acceptance Tests
+description: About Dice Media Group
+---
+
+<main class="application-main-content">
+<header class="single-column-layout">
+<h1 class="title-primary">
+Acceptance Tests
+</h1>
+</header>
+<div class="playbook-content-wrapper single-column-layout">
+<div class="playbook-content"><p>Acceptance tests are <a href="https://gist.github.com/croaky/d8699363382d86c10c54">jobs stories turned into code</a>. This code is
+run against the application. When executed for the first time, the test will
+fail. The developer writes application code until the test passes.</p>
+
+<p>When the test passes, the developer commits the code into version control with
+a message such as:</p>
+
+<blockquote>
+<p>Guest creates pledge</p>
+</blockquote>
+
+<p>The code is then run on the <a href="../developing/continuous-integration">Continuous Integration</a>
+server to make sure the acceptance test still passes in an environment that
+matches the production environment.</p>
+
+<p>Meanwhile, the code is pushed to the staging environment and the developer and
+customer representative smoke test it in the browser.</p>
+
+<p>When the acceptance test is green for the CI server and you and any other
+designers, developers, or clients are satisfied that the jobs story is complete
+on staging, the feature can be deployed to production at will. This can result
+in features being pushed to production very frequently, and therefore more value
+is being delivered to customers sooner.</p>
+</div>
+<div class="playbook-cta">
+<img src="//thoughtbot.com/assets/lyda-c69295eda89922eec4f78dc0d1e8fe8ed9f2dfc885e1ed522b20bc750e5bcab5.jpg" alt="Lyda">
+<div class="playbook-cta-content">
+<h3>Our experienced designers &amp; developers can help.</h3>
+<p>
+In person, small teams, focused sprints. 13 years &amp; 700+
+successful clients.
+</p>
+<a class="button-primary" href="/hire-us">Get in touch</a>
+</div>
+</div>
+<nav>
+<a class="back-to-link" href="/playbook">Back to the Playbook</a>
+</nav>
+</div>
+
+</main>

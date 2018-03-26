@@ -1,0 +1,231 @@
+---
+layout: default
+title: Meet weekly to discuss successes, failures, and future plans
+description: Dice Media Group's process
+---
+
+<main class="application-main-content">
+<header class="single-column-layout">
+<h1 class="title-primary">
+Meet weekly to discuss successes, failures, and future plans
+</h1>
+</header>
+<div class="playbook-content-wrapper single-column-layout">
+<div class="playbook-content"><p>Once a week,
+usually on Monday,
+everyone meets in-person
+or via video conference.
+This replaces Monday's daily standup
+and is an opportunity for the entire team to discuss
+achievements, hurdles, and concerns
+with the goal of
+everyone leaving excited and empowered for the week of work to come.</p>
+
+<p>The advisor runs this meeting.</p>
+
+<ul>
+<li>Understand how the team feels about last week's progress and what's to come.
+Ask each team member
+from both thoughtbot and the client,
+"How did you feel about last week? How do you feel coming into this week?"
+This is less a recap of the completed work
+(a better place being during <a href="/#daily-standups">daily standup</a>)
+and more a pulse of how each person feels.
+Take notes.</li>
+<li>Have each member of the team voice any risks or concerns;
+after everyone has had the opportunity to bring these up,
+work together as a group to mitigate these concerns.
+Encourage everyone to voice the same concerns
+even if they've already been mentioned;
+it helps prioritize what the team is most concerned about
+and should spend the most time fixing.
+This is an opportunity
+to discuss how to improve the process and product
+we're building together.
+Note who had which concerns and track how we'll be addressing these concerns.</li>
+<li>Celebrate success.
+Review the work that shipped last week,
+showing the actual product,
+and congratulate those who made it happen.</li>
+<li>After the retro is done,
+share the notes with the team
+and ensure anything actionable from the retro is captured.
+This allows teammates to view progress,
+understand how feelings on the project change over time,
+and accomplish anything we set out to do given the outcomes of the retro.</li>
+</ul>
+
+<p>Notes from a retro may look something like this:</p>
+
+<blockquote>
+<p>Joel</p>
+
+<ul>
+<li>last week
+
+<ul>
+<li>felt like it went by extremely fast
+
+<ul>
+<li>first couple days, thinking through the project, understanding</li>
+<li>didn't feel like we got much implemented in code</li>
+<li>feel great about knowing what we're building</li>
+</ul></li>
+</ul></li>
+<li>this week
+
+<ul>
+<li>feeling confident</li>
+</ul></li>
+</ul>
+
+<p>Ryan</p>
+
+<ul>
+<li>last week
+
+<ul>
+<li>fast-paced with understanding, overwhelmed with the complexity</li>
+<li>towards the end of the week with prototyping and iteration, it helped a lot</li>
+</ul></li>
+<li>this week
+
+<ul>
+<li>feel much better than start of last week</li>
+<li>brainstorming + prototype helps a lot</li>
+</ul></li>
+</ul>
+
+<p>Yadid</p>
+
+<ul>
+<li>last week
+
+<ul>
+<li>flew by, felt like it didn't happen</li>
+<li>progressed a lot</li>
+<li>defining the interaction was really important</li>
+<li>confident moving forward with what we decided upon</li>
+</ul></li>
+<li>this week
+
+<ul>
+<li>time is worrying</li>
+<li>user study, potentially risky</li>
+</ul></li>
+</ul>
+
+<p>Concerns</p>
+
+<ul>
+<li>timeline - it's a tight project (JQ, RC, YA)</li>
+<li>concerned with choice of technology with vanilla Rails (JQ, YA)
+
+<ul>
+<li>lots of state involved</li>
+</ul></li>
+<li>concerns around interaction and not specifically the visual design (RC)</li>
+<li>testing (potentially won't change outcome) (YA)</li>
+<li>need a staging server (JQ)
+
+<ul>
+<li>don't want to connect to real API</li>
+<li>in dev+test we've created a fake API that we're connecting to</li>
+<li>can't do that on Heroku</li>
+</ul></li>
+</ul>
+
+<p>Addressing concerns</p>
+
+<ul>
+<li>Yadid to set up a staging server for the app to interact with</li>
+<li>Ryan to do a quick run-through with Yadid re: interactions</li>
+<li>Josh to look into Omar rotating on</li>
+</ul>
+</blockquote>
+
+<p>The stage of the product should guide the planning meeting.
+For example:</p>
+
+<ol>
+<li>Research and Validation: Is a user interface flow validated enough to start
+making a minimal working version?</li>
+<li>Product Availability: Can users accomplish the flow with working, deployed
+software?</li>
+<li>User Engagement: What do numbers look like for that flow?</li>
+</ol>
+
+<p>Tell customer stories. Do people love this product? Show numbers. Are more
+people using the product this week than last? Are the same people using the
+product more this week than last?</p>
+
+<p>In all stages, we should be asking:</p>
+
+<ul>
+<li>Are we building the right product?</li>
+<li>How much time remains based on the budget?</li>
+</ul>
+
+<p>Based on the answers to these questions, we record our plans in the task
+management system:</p>
+
+<ul>
+<li>Archive the two-week old "Live (Week of [date])" list.</li>
+<li>Review product design priorities. Pull what we estimate to be an appropriate
+amount for this week into Next Up.</li>
+<li>Review bugs. Pull any important bugs into Next Up and prioritize them at the
+top of the queue before everything else. We want to always be fixing what's
+broken first.</li>
+<li>Review engineering and refactoring tasks. Pull cards into Next Up based on
+what the designers and developers believe is appropriate given the previously
+stated product design and bug tasks.</li>
+<li>Re-sort the entire Next Up queue according to priority. Cards that were at the
+top of the list last week may be moved to the bottom or back to other boards
+or lists.</li>
+</ul>
+
+<p>The task management system is the canonical repository for plans.</p>
+
+<p>When things are only said on the phone, in person, in emails that don't include
+the whole group, or in one-on-one chats, information gets lost, forgotten, or
+misinterpreted. The problems expand when someone joins or leaves the project.</p>
+
+<p>During this meeting, seek discussion with, not instruction from, clients. We
+can't talk about solutions until we identify the underlying problems.</p>
+
+<p>We've been called "aggressive" with our approach cutting features, budgets, and
+schedules. We say "no" a lot. It's hard to say "no." "No" is usually not
+well-received. There's a reason someone requested the feature.</p>
+
+<p>We have to battle sometimes in the face of "yes". We do so armed with knowledge
+of <a href="https://tbot.io/history-of-project-failure">the history of software success and
+failure</a>:
+in 2004, only 34% of software projects were considered successes. The good news
+is that was 100% better than the stats in 1994. "The primary reason is the
+projects have gotten a lot smaller."</p>
+
+<p>Few software projects fail because they aren't complicated enough. Saying "no"
+means keeping the software we're building as simple as possible. Every line of
+code we write is an asset and a liability.</p>
+
+<p>Simple software, once launched, is better suited to meeting the demands of
+customers. Complex software, if it ever even launches, is not as able to
+respond to customer demands quickly.</p>
+</div>
+<div class="playbook-cta">
+<img src="//thoughtbot.com/assets/lyda-c69295eda89922eec4f78dc0d1e8fe8ed9f2dfc885e1ed522b20bc750e5bcab5.jpg" alt="Lyda">
+<div class="playbook-cta-content">
+<h3>Our experienced designers &amp; developers can help.</h3>
+<p>
+In person, small teams, focused sprints. 13 years &amp; 700+
+successful clients.
+</p>
+<a class="button-primary" href="/hire-us">Get in touch</a>
+</div>
+</div>
+<nav>
+<a class="back-to-link" href="/playbook">Back to the Playbook</a>
+</nav>
+</div>
+
+</main>
