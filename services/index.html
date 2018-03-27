@@ -3,7 +3,32 @@ layout: default
 title: Services
 description: Dice Media Group development services
 ---
-
+<style>
+  .icon-item svg {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    max-width: 31px;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+user agent stylesheet
+svg:not(:root), symbol, image, marker, pattern, foreignObject {
+    overflow: hidden;
+}
+user agent stylesheet
+html|* > svg {
+    transform-origin: 50% 50% 0px;
+}
+user agent stylesheet
+* {
+    transform-origin: 0px 0px 0px;
+}
+</style>
 <main>
 <header class="services-hero single-column-layout">
 <h1>
@@ -208,15 +233,16 @@ and we'll get your app in Google Play painlessly.
 <section class="user-growth" id="user-growth">
 <div class="split-layout-primary">
 <div class="split-primary-wrapper growth">
-<h2 class="service-section-title">User growth</h2>
-<p class="paragraph-primary">
-Most startups don't fail to deliver a product;
-they fail to get traction.
-We can help with that.
-</p>
+  <h2 class="service-section-title">User growth</h2>
+  <p class="paragraph-primary">
+  Most startups don't fail to deliver a product;
+  they fail to get traction.
+  We can help with that.
+  </p>
+
 <ul class="icon-list">
 <li class="icon-item item-blue">
-<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 120 120">
+<!-- <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 120 120">
   <polygon points="66.45 90.06 60.59 111.53 45.41 111.47 25.16 90.42 66.45 90.06" fill="#d9f1ff"></polygon>
   <polygon points="69.17 80.23 91.38 58.02 78.94 45.58 56.56 67.96 25.09 76.54 25.17 91.36 45.41 111.6 60.59 111.69 69.17 80.23" fill="none" stroke="#3fa9f5" stroke-linejoin="round" stroke-width="4"></polygon>
   <circle cx="89.6" cy="30.36" r="4.83" fill="none" stroke="#3fa9f5" stroke-linejoin="round" stroke-width="4"></circle>
@@ -224,7 +250,7 @@ We can help with that.
   <line x1="63.85" y1="60.67" x2="69.33" y2="66.16" fill="none" stroke="#3fa9f5" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"></line>
   <line x1="71.44" y1="53.07" x2="76.93" y2="58.56" fill="none" stroke="#3fa9f5" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"></line>
 </svg>
-
+ -->
 <h4 class="title-secondary">Instrument Analytics</h4>
 <p>
 In order to analyze user behavior later,
@@ -232,7 +258,7 @@ we need to instrument our app to log the right metrics now.
 </p>
 </li>
 <li class="icon-item item-green">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img">
+<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img">
   <title>Investment time icon</title>
   <desc>Icon of a potted plant</desc>
   <path d="M38.8,18.47A16.64,16.64,0,0,0,59.2,38.86,16.64,16.64,0,0,0,38.8,18.47Z" fill="#e7ffd4" stroke="#7ac943" stroke-miterlimit="10" stroke-width="4"></path>
@@ -241,7 +267,7 @@ we need to instrument our app to log the right metrics now.
   <rect x="36.12" y="72.31" width="47.76" height="11.89" fill="none" stroke="#7ac943" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></rect>
   <polygon points="78.48 104.24 41.52 104.24 41.52 84.33 78.48 84.2 78.48 104.24" fill="none" stroke="#7ac943" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></polygon>
 </svg>
-
+ -->
 <h4 class="title-secondary">Identify Acquisition Channels</h4>
 <p>
 We run experiments on customer acquisition channels,
@@ -250,7 +276,7 @@ and kill what doesn't.
 </p>
 </li>
 <li class="icon-item item-yellow">
-<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 120 120">
+<!-- <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 120 120">
   <rect x="27" y="28" width="66" height="76" fill="none" stroke="#ff931e" stroke-linejoin="round" stroke-width="4"></rect>
   <path d="M68.6,23a7.88,7.88,0,1,0-15.76,0H40V34H80V23H68.6Z" fill="#ffe7cf" stroke="#ff931e" stroke-linejoin="round" stroke-width="4"></path>
   <polyline points="50.15 46.71 41.66 55.2 36.75 50.29" fill="none" stroke="#ff931e" stroke-miterlimit="10" stroke-width="4"></polyline>
@@ -260,7 +286,7 @@ and kill what doesn't.
   <polyline points="50.15 82.58 41.66 91.07 36.75 86.16" fill="none" stroke="#ff931e" stroke-miterlimit="10" stroke-width="4"></polyline>
   <line x1="58" y1="87" x2="84" y2="87" fill="none" stroke="#ff931e" stroke-miterlimit="10" stroke-width="4"></line>
 </svg>
-
+ -->
 <h4 class="title-secondary">Analyze Activation Funnels</h4>
 <p>
 We want to optimize new users' ability to
@@ -268,7 +294,7 @@ quickly get to the product's "aha moment".
 </p>
 </li>
 <li class="icon-item item-red">
-<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 120 120">
+<!-- <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 120 120">
   <circle cx="59.98" cy="95.42" r="11.68" transform="translate(-49.9 70.36) rotate(-45)" fill="#ffdee4" stroke="#ff1d25" stroke-miterlimit="10" stroke-width="4"></circle>
   <line x1="68.24" y1="87.16" x2="78.68" y2="76.72" fill="none" stroke="#ff1d25" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"></line>
   <circle cx="60.01" cy="26.58" r="11.68" transform="translate(-1.22 50.22) rotate(-45)" fill="#ffdee4" stroke="#ff1d25" stroke-miterlimit="10" stroke-width="4"></circle>
@@ -278,7 +304,7 @@ quickly get to the product's "aha moment".
   <circle cx="25.59" cy="61" r="11.68" transform="translate(-35.63 35.96) rotate(-45)" fill="none" stroke="#ff1d25" stroke-miterlimit="10" stroke-width="4"></circle>
   <line x1="33.85" y1="69.26" x2="44.29" y2="79.69" fill="none" stroke="#ff1d25" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"></line>
 </svg>
-
+ -->
 <h4 class="title-secondary">Understand Engagement</h4>
 <p>
 We want to know which users regularly use the product
@@ -286,7 +312,8 @@ in order to repeat that experience for others.
 </p>
 </li>
 </ul>
-<a title="We write about our growth experiments and expereince on our blog" class="paragraph-primary" href="https://robots.thoughtbot.com/tags/growth">Read some of our growth experiments</a>
+<!-- <a title="We write about our growth experiments and expereince on our blog" class="paragraph-primary" href="https://robots.thoughtbot.com/tags/growth">Read some of our growth experiments</a>
+ -->
 </div>
 </div>
 </section>
