@@ -1,0 +1,131 @@
+---
+layout: default
+title: Product Design Sprint Guide
+description: Dice Media Group agile methodology
+---
+
+<div class="nav-bar">
+<a class="thoughtbot-logo" href="/"><img src="//thoughtbot.com/assets/design-sprint-guide/thoughtbot-logo-83adcf8386728dcd2e73fb268435a12f4ab8f84a30b44d5177e0cb6abc350d0f.svg" alt="Thoughtbot logo">
+</a><div class="nav-menu">
+Menu
+</div>
+<div class="nav-items">
+<a class="main-link nav-link" href="/product-design-sprint/guide">The Product Design Sprint</a>
+<div class="sprint-schedule-wrapper">
+<a class="nav-link" href="/product-design-sprint/guide/prepare"><span class="phase"> Phase 0</span> Prepare</a>
+<a class="nav-link" href="/product-design-sprint/guide/understand"><span class="phase"> Phase 1</span> Understand</a>
+<a class="nav-link" href="/product-design-sprint/guide/diverge"><span class="phase"> Phase 2</span> Diverge</a>
+<a class="nav-link" href="/product-design-sprint/guide/converge"><span class="phase"> Phase 3</span> Converge</a>
+<a class="nav-link" href="/product-design-sprint/guide/prototype"><span class="phase"> Phase 4</span> Prototype</a>
+<a class="nav-link" href="/product-design-sprint/guide/test"><span class="phase"> Phase 5</span> Test</a>
+</div>
+</div>
+</div>
+
+<header class="wrapper">
+<div class="hero-section">
+<div class="pds-script">
+<img src="//thoughtbot.com/assets/design-sprint-guide/pds-script-3f20e7f5beca37c2db92d52ed6ba08c4dfed2d3fd4c67422bf5e2f3200617ed8.svg" alt="Pds script">
+</div>
+<p>
+A Product Design Sprint is a technique to quickly design, prototype,
+and test the viability of an idea, product, or feature. The design sprint
+consists of 5 phases (typically days), starting with design thinking and
+ending with a user-tested prototype.
+</p>
+</div>
+</header>
+<section class="main-content-container wrapper">
+<div class="pds-grid">
+<div class="pds-grid__row-1">
+<a class="sprint-card-container pds-grid__1" href="/product-design-sprint/guide/understand"><div class="card-details">
+<h3>Phase 1: Understand</h3>
+<h4>Gather existing knowledge, expose assumptions, and unknowns.</h4>
+</div>
+</a><a class="sprint-card-container pds-grid__2" href="/product-design-sprint/guide/diverge"><div class="card-details">
+<h3>Phase 2: Diverge</h3>
+<h4>Illuminate all paths.</h4>
+<div class="card-icon">
+<img class="phase-2-icon" src="//thoughtbot.com/assets/design-sprint-guide/day-2-icon-781fcaed7bef0e0f0c7e8b7aac066cfc5ef61a8147237d91b726cd7db7e35601.svg" alt="Day 2 icon">
+</div>
+</div>
+</a></div>
+<a class="sprint-card-container pds-grid__3" href="/product-design-sprint/guide/converge"><div class="card-details">
+<h3>Phase 3: Converge</h3>
+<h4>Choose the right path.</h4>
+<div class="card-icon">
+<img class="phase-3-icon" src="//thoughtbot.com/assets/design-sprint-guide/day-3-icon-e6ae28c859af6374f969b8849d66b309e7fae61be4744e256fe3f80d18b7ec04.svg" alt="Day 3 icon">
+</div>
+</div>
+</a><div class="pds-grid__4-5-container">
+<a class="sprint-card-container pds-grid__4" href="/product-design-sprint/guide/prototype"><div class="card-details">
+<h3>Phase 4: Prototype</h3>
+<h4>Quickly build the right path.</h4>
+<div class="card-icon">
+<img class="phase-4-icon" src="//thoughtbot.com/assets/design-sprint-guide/day-4-icon-e409317efd9e4d12b293e372150fbdada7027a2cb69e73b5c15b82c69529b237.svg" alt="Day 4 icon">
+</div>
+</div>
+</a><a class="sprint-card-container pds-grid__5" href="/product-design-sprint/guide/test"><div class="card-details">
+<h3>Phase 5: Testing</h3>
+<h4>Test the right path.</h4>
+</div>
+</a></div>
+<div class="pds-grid__6">
+<h3>Why a Product Design Sprint?</h3>
+<p>
+Product Design Sprints orient the team and aims our efforts toward a
+mutual goal and improves the chances of making something people want.
+</p>
+<p>
+Sprints are useful when kicking off a new business, product, or feature,
+as well as solving problems with an existing product.
+</p>
+<a href="/product-design-sprint/guide/prepare"><div class="ghost-btn">Prepare for a Sprint</div>
+</a></div>
+</div>
+</section>
+
+<script>
+  (function() {
+    // inline and immediately execute above-the-fold behavior
+  
+    function loadScript(url, callback) {
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+  
+      if (script.readyState) { // IE
+        script.onreadystatechange = function() {
+          if (script.readyState == 'loaded' || script.readyState == 'complete') {
+            script.onreadystatechange = null;
+            callback();
+          }
+        };
+      } else { // Others
+        script.onload = function() {
+          callback();
+        };
+      }
+  
+      script.src = url;
+      document.getElementsByTagName('head')[0].appendChild(script);
+    }
+  
+    loadScript('//thoughtbot.com/assets/application-8ac6ad76c131371d26b5b6b4d1c70c42f296000767eba338944bd9e25d13c926.js', function() {
+      $(".nav-bar").click(function(e){
+    $(this).toggleClass("active");
+  });
+  
+    });
+  })();
+</script>
+<script>
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+    analytics.load("p9svrhlnlb");
+    analytics.page();
+  }}();
+</script>
+
+
+
+<div id="drift-widget-container" style="position: absolute; z-index: 2147483647;"><iframe id="drift-widget" src="https://js.driftt.com/dist/index-prod.html" style="border: medium none; display: block; position: fixed; top: auto; left: auto; bottom: 24px; right: 24px; width: 400px !important; height: 152px !important; visibility: visible; z-index: 2147483647; max-height: 100vh; max-width: 100%; transition: none 0s ease 0s; background: transparent none repeat scroll 0% 0%; opacity: 1;" title="Drift Messenger" role="complementary" class="drift-widget-slider" frameborder="0"></iframe></div>
