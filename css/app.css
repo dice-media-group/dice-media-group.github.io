@@ -22,3 +22,8 @@ ul, ol {
 .icon-item.item-red .title-secondary {
     color: #ff1d25;
 }
+/* product design sprint guide*/
+.header-image-background-color {
+	background: #00B28F;
+	/*background: yellow;*/
+}
