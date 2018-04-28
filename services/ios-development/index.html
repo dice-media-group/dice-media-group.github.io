@@ -3,62 +3,79 @@ layout: default
 title: iOS Development
 description: Dice Media Group ios-development services
 ---
-
 <main class="application-main-content">
-<header class="ios-dev-hero">
-<div class="hero-container">
-<h1 class="ios-dev-page-title">iOS Development</h1>
-<h2 class="ios-dev-page-subtitle">All the expertise you need to write clean, well-tested iOS applications.</h2>
-</div>
-</header>
-<section class="ios-dev-our-skills">
-<img class="ios-icon" alt="iOS Icon" src="//thoughtbot.com/assets/ios-dev/ios-icon-c3cbead26ecdd7d30906f11c570ce2d3e2c28e6de0738733f124b1c46ff2f2ed.png">
-<ul class="skill-list">
-<li class="skill-item">
-<div class="icon-container">
-<img class="skill-icon" alt="Xcode Icon" src="//thoughtbot.com/assets/ios-dev/xcode-icon-7512a141cc0cb917b000eac30ea1209a4494999fd911561777c23a1de02cadd9.png">
-</div>
-<div class="skill-details">
-<h4>100% Native.</h4>
-<p>We build our iOS apps using Xcode, Swift, and Objective-C. No third-party platforms sit between iOS and the code we write, which means we are always ready to adopt the latest technologies from Apple.</p>
-<hr>
-</div>
-</li>
-<li class="skill-item">
-<div class="icon-container">
-<img class="skill-icon" alt="Frameworks Icon" src="//thoughtbot.com/assets/ios-dev/frameworks-icon-a2aeb634afa1aaa427e7268f5e0a409ac3fd1cda53a582f40d09a629a4df7a1c.png">
-</div>
-<div class="skill-details">
-<h4>Frameworks.</h4>
-<p>Whether it’s UIKit or CoreData, we know how to make the most of the iOS SDK and use the right tool for the job.</p>
-<hr>
-</div>
-</li>
-<li class="skill-item">
-<div class="icon-container">
-<img class="skill-icon" alt="Battery Icon" src="//thoughtbot.com/assets/ios-dev/battery-icon-6b873e7115d10e5c78dadc32f0305dbfec7dcffd9a510118d7defd4613928f4f.png">
-</div>
-<div class="skill-details">
-<h4>Performance.</h4>
-<p>Mobile devices have limited battery capacity, slower CPUs than desktop machines, and often limited network access. We use multi-threading, caching, and other techniques to optimize mobile performance, and keep the UI smooth at the same time.</p>
-</div>
-</li>
-</ul>
-</section>
-<section class="ios-dev-swift">
-<div class="swift-container">
-<div class="we-love-swift">
-<div class="we-love-swift-container">
-<h3 class="we-love-swift-heading">
-<span>We</span>
-<img class="heart-icon" src="//thoughtbot.com/assets/ios-dev/heart-icon-91a472d291d129ccf5a31ac9f50e09e5ec819300c6d5f5eb905af5766520dc20.svg" alt="Heart icon">
-<span>Swift</span>
-</h3>
-<p class="we-love-swift-details">We have been on the <a href="https://swift.org">Swift</a> bandwagon since the day Apple announced it. We use Swift for all our new projects, have used Swift to add functionality to existing apps, and have rewritten Objective-C code in Swift when necessary.</p>
-</div>
-</div>
-<div class="swift-sample-code">
-<pre><code>func apply&lt;U&gt;(f: Decoded&lt;T -&gt; U&gt;)
+  <div class="hero-container">
+    <h1 class="ios-dev-page-title">iOS Development</h1>
+
+    <h2 class="ios-dev-page-subtitle">All the expertise you need to write clean,
+    well-tested iOS applications.</h2>
+  </div><img class="ios-icon" alt="iOS Icon" src=
+  "/images/ios-dev/ios-icon.png" />
+
+  <ul class="skill-list">
+    <li class="skill-item grid-x  grid-margin-x">
+      <div class="icon-container cell small-2">
+      	<img class="skill-icon" alt="Xcode Icon" src=
+      "/images/ios-dev/xcode-icon.png" /></div>
+
+      <div class="skill-details cell auto">
+        <h4>100% Native.</h4>
+
+        <p>We build our iOS apps using Xcode, Swift, and Objective-C. No third-party
+        platforms sit between iOS and the code we write, which means we are always ready
+        to adopt the latest technologies from Apple.</p>
+        <hr />
+      </div>
+    </li>
+
+    <li class="skill-item grid-x  grid-margin-x">
+      <div class="icon-container cell small-2">
+      	<img class="skill-icon" alt="Frameworks Icon" src=
+      "/images/ios-dev/frameworks-icon.png" /></div>
+
+      <div class="skill-details cell auto">
+        <h4>Frameworks.</h4>
+
+        <p>Whether it&rsquo;s UIKit or CoreData, we know how to make the most of the iOS
+        SDK and use the right tool for the job.</p>
+        <hr />
+      </div>
+    </li>
+
+    <li class="skill-item grid-x  grid-margin-x">
+      <div class="icon-container cell small-2">
+      	<img class="skill-icon" alt="Battery Icon" src=
+      	"/images/ios-dev/battery-icon.png" />
+  	  </div>
+
+      <div class="skill-details cell auto">
+        <h4>Performance.</h4>
+
+        <p>Mobile devices have limited battery capacity, slower CPUs than desktop
+        machines, and often limited network access. We use multi-threading, caching, and
+        other techniques to optimize mobile performance, and keep the UI smooth at the
+        same time.</p>
+      </div>
+    </li>
+  </ul>
+
+  <div class="swift-container">
+    <div class="we-love-swift">
+      <div class="we-love-swift-container">
+        <h3 class="we-love-swift-heading"><span>We</span> <img class="heart-icon" src=
+        "/images/ios-dev/heart-icon.svg"
+        alt="Heart icon" /> <span>Swift</span></h3>
+
+        <p class="we-love-swift-details">We have been on the <a href=
+        "https://swift.org">Swift</a> bandwagon since the day Apple announced it. We use
+        Swift for all our new projects, have used Swift to add functionality to existing
+        apps, and have rewritten Objective-C code in Swift when necessary.</p>
+      </div>
+    </div>
+
+    <div class="swift-sample-code">
+      <pre>
+<code>func apply&lt;U&gt;(f: Decoded&lt;T -&gt; U&gt;)
   -&gt; Decoded&lt;U&gt; {
   switch f {
   case let .Success(function):
@@ -67,36 +84,47 @@ description: Dice Media Group ios-development services
     return .Failure(error)
   }
 }
-</code></pre>
-</div>
-</div>
-</section>
-<section class="ios-dev-tdd">
-<div class="tdd-container">
-<div class="test-driven-development">
-<div class="popover">
-<div class="popover-content">
-<h4 class="popover-title">Test-Driven Development</h4>
-<p class="popover-copy">We care about software quality. TDD allows us to double-check the code we write, ensuring that any enhancements we make in the future don't stop existing functionality from working.</p>
-</div>
-</div>
-</div>
-<div class="tdd-icons">
-<img class="tdd-icon" alt="TDD Green Icon" src="//thoughtbot.com/assets/ios-dev/tdd-green-cc3af42cec90ae4affad5fc4ca0238368675f38eb7c0461f279b03cc9dd820bc.svg">
-<img class="tdd-icon middle" alt="TDD Green Icon" src="//thoughtbot.com/assets/ios-dev/tdd-green-cc3af42cec90ae4affad5fc4ca0238368675f38eb7c0461f279b03cc9dd820bc.svg">
-<img class="tdd-icon" alt="TDD Red Icon" src="//thoughtbot.com/assets/ios-dev/tdd-red-499f33dce4b24ff63b4667a8c06f9e49126605d164b5cf986b85faf2d74b8b0c.svg">
-</div>
-<div class="testing-frameworks">
-<div class="popover">
-<div class="popover-content">
-<h4 class="popover-title">Testing Frameworks</h4>
-<p class="popover-copy">We use <a href="https://developer.apple.com/library/ios/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/01-introduction.html">XCTest</a>, <a href="https://github.com/Quick/Nimble">Nimble</a>, and <a href="https://github.com/Quick/Quick">Quick</a>. These tools give us more expressive ways of writing our tests and let us find potential bugs before they go into production.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- <section class="ios-dev-featured">
+</code>
+</pre>
+    </div>
+  </div>
+
+  <div class="tdd-container">
+    <div class="test-driven-development">
+      <div class="popover">
+        <div class="popover-content">
+          <h4 class="popover-title">Test-Driven Development</h4>
+
+          <p class="popover-copy">We care about software quality. TDD allows us to
+          double-check the code we write, ensuring that any enhancements we make in the
+          future don't stop existing functionality from working.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tdd-icons"><img class="tdd-icon" alt="TDD Green Icon" src=
+    "//thoughtbot.com/assets/ios-dev/tdd-green-cc3af42cec90ae4affad5fc4ca0238368675f38eb7c0461f279b03cc9dd820bc.svg" />
+    <img class="tdd-icon middle" alt="TDD Green Icon" src=
+    "//thoughtbot.com/assets/ios-dev/tdd-green-cc3af42cec90ae4affad5fc4ca0238368675f38eb7c0461f279b03cc9dd820bc.svg" />
+     <img class="tdd-icon" alt="TDD Red Icon" src=
+    "//thoughtbot.com/assets/ios-dev/tdd-red-499f33dce4b24ff63b4667a8c06f9e49126605d164b5cf986b85faf2d74b8b0c.svg" />
+    </div>
+
+    <div class="testing-frameworks">
+      <div class="popover">
+        <div class="popover-content">
+          <h4 class="popover-title">Testing Frameworks</h4>
+
+          <p class="popover-copy">We use <a href=
+          "https://developer.apple.com/library/ios/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/01-introduction.html">
+          XCTest</a>, <a href="https://github.com/Quick/Nimble">Nimble</a>, and <a href=
+          "https://github.com/Quick/Quick">Quick</a>. These tools give us more expressive
+          ways of writing our tests and let us find potential bugs before they go into
+          production.</p>
+        </div>
+      </div>
+    </div>
+  </div><!-- <section class="ios-dev-featured">
 <div class="build-phase-background"></div>
 <div class="featured-container">
 <div class="build-phase-feature">
@@ -115,18 +143,19 @@ description: Dice Media Group ios-development services
 <img class="star-icon" alt="Star Icon" src="//thoughtbot.com/assets/ios-dev/start-icon-756764c36dacd74991a7933209139d4c4c3915ac8ea9f2160e62783b508817ff.svg">
 <span>2326 GitHub Stars</span>
 </h4>
-<p class="argo-description">We’ve built one of the first and most popular JSON parsers in Swift, inspired by the functional approach used in Haskell's Aeson package. Argo provides a clear, concise solution to one of the most widespread problems in modern software development.</p>
+<p class="argo-description">Weve built one of the first and most popular JSON parsers in Swift, inspired by the functional approach used in Haskell's Aeson package. Argo provides a clear, concise solution to one of the most widespread problems in modern software development.</p>
 <a class="argo-github-button" href="https://github.com/thoughtbot/Argo">Argo on GitHub</a>
 </div>
 </div>
 </div>
 <div class="argo-background"></div>
 </section>
- --><section class="ios-dev-team">
-<div class="ios-dev-team-container">
-<div class="ios-team-member-grid">
-<ul class="team-member-mugshots">
-<!-- <li class="mugshot">
+ -->
+
+  <div class="ios-dev-team-container">
+    <div class="ios-team-member-grid">
+      <ul class="team-member-mugshots">
+        <!-- <li class="mugshot">
 <a id="nick-charlton" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197" height="227" viewBox="0 0 197 227"><title>Nick Charlton</title><filter id="grayscale"><feColorMatrix type="saturate" values="0"></feColorMatrix></filter><defs><path id="a" d="M98.17-.383l98.168 56.678V169.65l-98.17 56.68L0 169.65V56.296z"></path><path id="c" d="M-4.465-21.336h200.627v269.334H-4.465z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"></use></mask><g mask="url(#b)"><image x="-12.46" y="-22.34" width="220" height="300" filter="url(#grayscale)" xlink:href="https://images.thoughtbot.com/people/images/web_medium/nick-charlton.jpg"></image><use fill-opacity="0" fill="#7665CF" style="mix-blend-mode:hard-light" xlink:href="#c" class="hover-overlay"></use></g></g></svg>
 
 </a></li>
@@ -158,36 +187,41 @@ description: Dice Media Group ios-development services
 <a id="gordon-fontenot" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197" height="227" viewBox="0 0 197 227"><title>Gordon Fontenot</title><filter id="grayscale"><feColorMatrix type="saturate" values="0"></feColorMatrix></filter><defs><path id="a" d="M98.17-.383l98.168 56.678V169.65l-98.17 56.68L0 169.65V56.296z"></path><path id="c" d="M-4.465-21.336h200.627v269.334H-4.465z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"></use></mask><g mask="url(#b)"><image x="-12.46" y="-22.34" width="220" height="300" filter="url(#grayscale)" xlink:href="https://images.thoughtbot.com/people/images/web_medium/gordon-fontenot.jpg"></image><use fill-opacity="0" fill="#7665CF" style="mix-blend-mode:hard-light" xlink:href="#c" class="hover-overlay"></use></g></g></svg>
 
 </a></li>
- --></ul>
-</div>
-<div class="ios-team-member-details">
-<div class="bio">
-<!-- <div id="gordon-fontenot" style="display: none;">
+ -->
+      </ul>
+    </div>
+
+    <div class="ios-team-member-details">
+      <div class="bio">
+        <!-- <div id="gordon-fontenot" style="display: none;">
 <h4 class="team-member-name">Gordon Fontenot</h4>
 <p class="team-member-bio">
 A native Texan, Gordon leads our mobile development team. He enjoys functional programming, test driven design, watching crappy TV, and lifting heavy weights.
 </p>
 </div>
  -->
- <!-- <div id="jake-craige" style="display: block;">
+        <!-- <div id="jake-craige" style="display: block;">
 <h4 class="team-member-name">Jake Craige</h4>
 <p class="team-member-bio">
 Jake is a developer with an insatiable thirst for learning. He first dipped his toe into programming with a homegrown PHP app and had so much fun he decided to pursue a career in it. Years later, he's now knowledgeable in a variety of programming languages and frameworks and is having as much fun as he did when he started.
 </p>
 </div>
  -->
-</div>
-</div>
-</div>
-</section>
-<section class="ios-dev-open-source">
-<div class="ios-dev-open-source-container">
-<div class="open-source-intro">
-<h3 class="open-source-title">Open Source</h3>
-<p class="we-like-open-source">We at Dice Media Group love the Ruby on Rails community, and this tradition is proudly carried forward by our iOS developers, too.</p>
-</div>
-<div class="open-source-projects">
-<!-- <ol class="open-source-project-list">
+      </div>
+    </div>
+  </div>
+
+  <div class="ios-dev-open-source-container">
+    <div class="open-source-intro">
+      <h3 class="open-source-title">Open Source</h3>
+
+      <p class="we-like-open-source">We at Dice Media Group love the Ruby on Rails
+      community, and this tradition is proudly carried forward by our iOS developers,
+      too.</p>
+    </div>
+
+    <div class="open-source-projects">
+      <!-- <ol class="open-source-project-list">
 <li>
 <a class="open-source-project argo" href="https://github.com/thoughtbot/Argo"><div class="project-info">
 <h4 class="project-name">Argo</h4>
@@ -237,21 +271,17 @@ Jake is a developer with an insatiable thirst for learning. He first dipped his 
 </div>
 </a></li>
 </ol>
- --></div>
-</div>
-</section>
-<section class="hire-us-cta">
-<h2 class="title-hidden">
-Hire us to help you build excellent software
-</h2>
-<div class="hire-us-cta-wrapper">
-<p>
-Our best work gets done when we can work face-to-face with you. Chat with a designer or developer at one of our studios near you.
+ -->
+    </div>
+  </div>
 
-</p>
-<a class="button-inverse" href="/hire-us">Let’s make something great together
-</a></div>
-<!-- <section class="service-locations">
+  <h2 class="title-hidden">Hire us to help you build excellent software</h2>
+
+  <div class="hire-us-cta-wrapper">
+    <p>Our best work gets done when we can work face-to-face with you. Chat with a
+    designer or developer at one of our studios near you.</p><a class="button-inverse"
+    href="/hire-us">Let&rsquo;s make something great together</a>
+  </div><!-- <section class="service-locations">
 <ul class="service-locations-list">
 <li class="service-location">
 <a href="/austin"><div class="location-icon">
@@ -485,7 +515,6 @@ Our best work gets done when we can work face-to-face with you. Chat with a desi
 </ul>
 </section>
  -->
-</section>
 
 
 </main>
