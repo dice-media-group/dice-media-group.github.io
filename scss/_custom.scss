@@ -53,3 +53,6 @@ img.skill-icon {
     display: inline-block;
     margin-top: 0.2em;
 }
+.button-primary {
+  @include button;
+}
