@@ -5,86 +5,67 @@ description: About Dice Media Group process
 ---
 
 <main class="application-main-content">
-<header class="single-column-layout">
-<h1 class="title-primary">
+    <header class="single-column-layout">
+        <h1 class="title-primary">
 Instrumentation
 </h1>
-</header>
-<div class="playbook-content-wrapper single-column-layout">
-<div class="playbook-content"><p>In order to analyze metrics later, we need to instrument our app to log the
-right metrics. The primary type of instrumentation we care about is called
-"event tracking."</p>
+    </header>
+    <div class="playbook-content-wrapper single-column-layout">
+        <div class="playbook-content">
+            <p>In order to analyze metrics later, we need to instrument our app to log the right metrics. The primary type of instrumentation we care about is called "event tracking."</p>
 
-<p>Use <a href="https://segment.com/">Segment</a> to capture events whenever possible. It is
-analogous to <a href="http://sourcemaking.com/design_patterns/adapter">the adapter pattern</a> for analytics services.</p>
+            <p>Use <a href="https://segment.com/">Segment</a> to capture events whenever possible. It is analogous to <a href="http://sourcemaking.com/design_patterns/adapter">the adapter pattern</a> for analytics services.</p>
 
-<p>Segment provides one JavaScript library in our web apps,
-one library in our server-side framework,
-and one SDK in our mobile apps.
-This allows us to toggle different services
-such as Google Analytics, Amplitude, FullStory, Intercom, and others.</p>
+            <p>Segment provides one JavaScript library in our web apps, one library in our server-side framework, and one SDK in our mobile apps. This allows us to toggle different services such as Google Analytics, Amplitude, FullStory, Intercom, and others.</p>
 
-<p><img src="/images/segment-io.jpg" alt="Segment"></p>
+            <p><img src="/images/segment-io.jpg" alt="Segment"></p>
 
-<p>When Segment does not support a backend service, we can either use the
-service directly or contribute to the appropriate <a href="https://segment.com/libraries/analytics.js">Segment open source
+            <p>When Segment does not support a backend service, we can either use the service directly or contribute to the appropriate <a href="https://segment.com/libraries/analytics.js">Segment open source
 libraries</a>.</p>
 
-<p>The hardest part of event tracking is choosing the <a href="http://qr.ae/GBPdx">granularity of the
-events</a>. It's costly to reconstruct historical measurements and
-missed knowledge can kill an early-stage product. So:</p>
+            <p>The hardest part of event tracking is choosing the <a href="http://qr.ae/GBPdx">granularity of the
+events</a>. It's costly to reconstruct historical measurements and missed knowledge can kill an early-stage product. So:</p>
 
-<ul>
-<li>track events as soon as they exist in the product</li>
-<li>err on the side of more data than less</li>
-<li>include as much state as possible per event</li>
-<li>own the data from the start</li>
-</ul>
+            <ul>
+                <li>track events as soon as they exist in the product</li>
+                <li>err on the side of more data than less</li>
+                <li>include as much state as possible per event</li>
+                <li>own the data from the start</li>
+            </ul>
 
-<p>Some typical events we'll want to track:</p>
+            <p>Some typical events we'll want to track:</p>
 
-<ul>
-<li>open app (mobile)</li>
-<li>background app (mobile)</li>
-<li>pageviews (web)</li>
-<li>create account</li>
-<li>make purchase</li>
-<li>add content</li>
-<li>make connection/friend</li>
-<li>upgrade subscription</li>
-<li>refer friend</li>
-</ul>
+            <ul>
+                <li>open app (mobile)</li>
+                <li>background app (mobile)</li>
+                <li>pageviews (web)</li>
+                <li>create account</li>
+                <li>make purchase</li>
+                <li>add content</li>
+                <li>make connection/friend</li>
+                <li>upgrade subscription</li>
+                <li>refer friend</li>
+            </ul>
 
-<p>Use properties on events liberally. Typically include:</p>
+            <p>Use properties on events liberally. Typically include:</p>
 
-<ul>
-<li>session ID</li>
-<li>all user properties</li>
-<li>environment: operating system, app version, device hardware details,</li>
-<li>current battery, wifi, cellular status</li>
-<li>number of seconds into the session</li>
-</ul>
+            <ul>
+                <li>session ID</li>
+                <li>all user properties</li>
+                <li>environment: operating system, app version, device hardware details,</li>
+                <li>current battery, wifi, cellular status</li>
+                <li>number of seconds into the session</li>
+            </ul>
 
-<p><a href="https://tbot.io/whom-the-gods">Business analytics do not need to be realtime</a> and tracking
-these data should not slow down the user experience. So, we background
-these tasks whenever possible using whatever backgrounding system makes
-sense for our platform.  Examples include <a href="https://github.com/collectiveidea/delayed_job">Delayed Job</a> and
-<a href="https://github.com/resque/resque">Resque</a>.</p>
-</div>
-<div class="playbook-cta">
-<img src="//thoughtbot.com/assets/lyda-c69295eda89922eec4f78dc0d1e8fe8ed9f2dfc885e1ed522b20bc750e5bcab5.jpg" alt="Lyda">
-<div class="playbook-cta-content">
-<h3>Our experienced designers &amp; developers can help.</h3>
-<p>
-In person, small teams, focused sprints. 13 years &amp; 700+
-successful clients.
-</p>
-<a class="button-primary" href="/hire-us">Get in touch</a>
-</div>
-</div>
-<nav>
-<a class="back-to-link" href="/playbook">Back to the Playbook</a>
-</nav>
-</div>
+            <p><a href="https://tbot.io/whom-the-gods">Business analytics do not need to be realtime</a> and tracking these data should not slow down the user experience. So, we background these tasks whenever possible using whatever backgrounding system makes sense for our platform. Examples include <a href="https://github.com/collectiveidea/delayed_job">Delayed Job</a> and
+                <a href="https://github.com/resque/resque">Resque</a>.</p>
+        </div>
+
+			{% include playbook_cta.html %}
+
+        <nav>
+            <a class="back-to-link" href="/playbook">Back to the Playbook</a>
+        </nav>
+    </div>
 
 </main>
