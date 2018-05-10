@@ -53,6 +53,12 @@ img.skill-icon {
     display: inline-block;
     margin-top: 0.2em;
 }
+
+
+// convert style to foundation 6
+.skill-item  {
+  @include xy-grid;
+}
 .button-primary {
   @include button;
 }
