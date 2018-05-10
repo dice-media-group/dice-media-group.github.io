@@ -5,59 +5,39 @@ description: About Dice Media Group process
 ---
 
 <main class="application-main-content">
-<header class="single-column-layout">
-<h1 class="title-primary">
+    <header class="single-column-layout">
+        <h1 class="title-primary">
 Production Checklist
 </h1>
-</header>
-<div class="playbook-content-wrapper single-column-layout">
-<div class="playbook-content"><p>We have found that a short checklist is valuable when setting up a new
-production environment or preparing for a launch:</p>
+    </header>
+    <div class="playbook-content-wrapper single-column-layout">
+        <div class="playbook-content">
+            <p>We have found that a short checklist is valuable when setting up a new production environment or preparing for a launch:</p>
 
-<ul>
-<li>Are we on the <a href="https://devcenter.heroku.com/articles/stack">latest Heroku stack</a>?</li>
-<li>Are we using a concurrent web server?
-See <a href="https://tbot.io/deploy-rails-puma">how to deploy with Puma</a>.</li>
-<li>Are long-running processes such as email delivery being run in background
-jobs?
-See <a href="https://tbot.io/production-db">how to set up Delayed Job</a>.</li>
-<li>Are there redundant (at least two) web and background processes running?</li>
-<li>Are we using SSL?
-See "<a href="./ssl-certificates">SSL Certificates</a>" section below.</li>
-<li>Are API requests being made via a separate subdomain (<code>api.example.com</code>)? Even
-if the same app, this gives us architectural flexibility in the future.</li>
-<li>Is the <a href="https://www.ruby-lang.org/en/downloads/">latest Ruby</a> defined in the <code>Gemfile</code>?
-See <a href="http://bundler.io/v1.11/gemfile_ruby.html">how to set it up</a>.</li>
-<li>Is <a href="http://12factor.net/config">config stored in environment variables</a>?</li>
-<li>Are deploys done manually at a scheduled time when teammates are fresh and
-available if something goes wrong?</li>
-<li>Do deploys follow <a href="https://tbot.io/rails-deploy">a well-documented script</a>?</li>
-<li>Are we sending logs to a remote logging service?
-See "<a href="./log-collection">Log Collection</a>" section below.</li>
-<li>Are we using a Heroku "Standard" database or higher?
-See <a href="https://tbot.io/production-db">Heroku production databases</a>.</li>
-<li>Are we backing up our production database?
-See <a href="https://tbot.io/heroku-pgbackup">Heroku PGBackups</a>.</li>
-<li>Are we monitoring performance and uptime?
-See "<a href="./performance-monitoring">Performance Monitoring</a>" section below.</li>
-<li>Are we tracking errors?
-See "<a href="./error-tracking">Error Tracking</a>" section below.</li>
-</ul>
-</div>
-<div class="playbook-cta">
-<img src="//thoughtbot.com/assets/lyda-c69295eda89922eec4f78dc0d1e8fe8ed9f2dfc885e1ed522b20bc750e5bcab5.jpg" alt="Lyda">
-<div class="playbook-cta-content">
-<h3>Our experienced designers &amp; developers can help.</h3>
-<p>
-In person, small teams, focused sprints. 13 years &amp; 700+
-successful clients.
-</p>
-<a class="button-primary" href="/hire-us">Get in touch</a>
-</div>
-</div>
-<nav>
-<a class="back-to-link" href="/playbook">Back to the Playbook</a>
-</nav>
-</div>
+            <ul>
+                <li>Are we on the <a href="https://devcenter.heroku.com/articles/stack">latest Heroku stack</a>?</li>
+                <li>Are we using a concurrent web server? See <a href="https://tbot.io/deploy-rails-puma">how to deploy with Puma</a>.</li>
+                <li>Are long-running processes such as email delivery being run in background jobs? See <a href="https://tbot.io/production-db">how to set up Delayed Job</a>.</li>
+                <li>Are there redundant (at least two) web and background processes running?</li>
+                <li>Are we using SSL? See "<a href="./ssl-certificates">SSL Certificates</a>" section below.</li>
+                <li>Are API requests being made via a separate subdomain (<code>api.example.com</code>)? Even if the same app, this gives us architectural flexibility in the future.</li>
+                <li>Is the <a href="https://www.ruby-lang.org/en/downloads/">latest Ruby</a> defined in the <code>Gemfile</code>? See <a href="http://bundler.io/v1.11/gemfile_ruby.html">how to set it up</a>.</li>
+                <li>Is <a href="http://12factor.net/config">config stored in environment variables</a>?</li>
+                <li>Are deploys done manually at a scheduled time when teammates are fresh and available if something goes wrong?</li>
+                <li>Do deploys follow <a href="https://tbot.io/rails-deploy">a well-documented script</a>?</li>
+                <li>Are we sending logs to a remote logging service? See "<a href="./log-collection">Log Collection</a>" section below.</li>
+                <li>Are we using a Heroku "Standard" database or higher? See <a href="https://tbot.io/production-db">Heroku production databases</a>.</li>
+                <li>Are we backing up our production database? See <a href="https://tbot.io/heroku-pgbackup">Heroku PGBackups</a>.</li>
+                <li>Are we monitoring performance and uptime? See "<a href="./performance-monitoring">Performance Monitoring</a>" section below.</li>
+                <li>Are we tracking errors? See "<a href="./error-tracking">Error Tracking</a>" section below.</li>
+            </ul>
+        </div>
+
+			{% include playbook_cta.html %}
+
+        <nav>
+            <a class="back-to-link" href="/playbook">Back to the Playbook</a>
+        </nav>
+    </div>
 
 </main>

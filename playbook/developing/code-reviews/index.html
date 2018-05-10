@@ -5,65 +5,52 @@ description: About Dice Media Group
 ---
 
 <main class="application-main-content">
-<header class="single-column-layout">
-<h1 class="title-primary">
+    <header class="single-column-layout">
+        <h1 class="title-primary">
 Code Reviews
 </h1>
-</header>
-<div class="playbook-content-wrapper single-column-layout">
-<div class="playbook-content"><p>Here's the flow. Read <a href="https://tbot.io/protocol">our git protocol</a> for the git commands.</p>
+    </header>
+    <div class="playbook-content-wrapper single-column-layout">
+        <div class="playbook-content">
+            <p>Here's the flow. Read <a href="https://tbot.io/protocol">our git protocol</a> for the git commands.</p>
 
-<ol>
-<li>Create a local feature branch based off master.</li>
-<li>When feature is complete and tests pass, stage the changes.</li>
-<li>When you've staged the changes, commit them.</li>
-<li>Write a <a href="https://tbot.io/better-commit-message">good commit message</a>.</li>
-<li>Share your branch.</li>
-<li>Submit a <a href="https://help.github.com/articles/about-pull-requests/">GitHub pull request</a>.</li>
-<li>Ask for a code review in <a href="https://slack.com/">Slack</a>.</li>
-<li>A team member other than the author reviews the pull request. They follow
-<a href="https://tbot.io/code-review">Code Review guidelines</a> to avoid miscommunication.</li>
-<li>They make comments and ask questions directly on lines of code in the GitHub
-web interface or in Slack.</li>
-<li>When satisfied, they approve or comment on the pull request that it's ready
-to merge.</li>
-<li>Rebase interactively. Squash commits like "Fix whitespace" into one or a
-small number of valuable commit(s). Edit commit messages to reveal intent.</li>
-<li>View a list of new commits. View changed files. Merge branch into master.</li>
-<li>Delete your remote feature branch.</li>
-<li>Delete your local feature branch.</li>
-</ol>
+            <ol>
+                <li>Create a local feature branch based off master.</li>
+                <li>When feature is complete and tests pass, stage the changes.</li>
+                <li>When you've staged the changes, commit them.</li>
+                <li>Write a <a href="https://tbot.io/better-commit-message">good commit message</a>.</li>
+                <li>Share your branch.</li>
+                <li>Submit a <a href="https://help.github.com/articles/about-pull-requests/">GitHub pull request</a>.</li>
+                <li>Ask for a code review in <a href="https://slack.com/">Slack</a>.</li>
+                <li>A team member other than the author reviews the pull request. They follow
+                    <a href="https://tbot.io/code-review">Code Review guidelines</a> to avoid miscommunication.</li>
+                <li>They make comments and ask questions directly on lines of code in the GitHub web interface or in Slack.</li>
+                <li>When satisfied, they approve or comment on the pull request that it's ready to merge.</li>
+                <li>Rebase interactively. Squash commits like "Fix whitespace" into one or a small number of valuable commit(s). Edit commit messages to reveal intent.</li>
+                <li>View a list of new commits. View changed files. Merge branch into master.</li>
+                <li>Delete your remote feature branch.</li>
+                <li>Delete your local feature branch.</li>
+            </ol>
 
-<p>Test-Driven Development moves code failure earlier in the development process.
-It's better to have a failing test on your development machine than in
-production. It also allows you to have tighter feedback cycles.</p>
+            <p>Test-Driven Development moves code failure earlier in the development process. It's better to have a failing test on your development machine than in production. It also allows you to have tighter feedback cycles.</p>
 
-<p>Code reviews that happen right before code goes into master offer similar
-benefits:</p>
+            <p>Code reviews that happen right before code goes into master offer similar benefits:
+            </p>
 
-<ul>
-<li>The whole team learns about new code as it is written.</li>
-<li>Mistakes are caught earlier.</li>
-<li>Coding standards are more likely to be established, discussed, and followed.</li>
-<li>Feedback from this style of code review is far more likely to be applied.</li>
-<li>No one forgets context ("Why did we write this?") since it's fresh in the
-author's mind.</li>
-</ul>
-</div>
-<div class="playbook-cta">
-<img src="//thoughtbot.com/assets/lyda-c69295eda89922eec4f78dc0d1e8fe8ed9f2dfc885e1ed522b20bc750e5bcab5.jpg" alt="Lyda">
-<div class="playbook-cta-content">
-<h3>Our experienced designers &amp; developers can help.</h3>
-<p>
-In person, small teams, focused sprints. 13 years &amp; 700+
-successful clients.
-</p>
-<a class="button-primary" href="/hire-us">Get in touch</a>
-</div>
-</div>
-<nav>
-<a class="back-to-link" href="/playbook">Back to the Playbook</a>
-</nav>
-</div>
+            <ul>
+                <li>The whole team learns about new code as it is written.</li>
+                <li>Mistakes are caught earlier.</li>
+                <li>Coding standards are more likely to be established, discussed, and followed.</li>
+                <li>Feedback from this style of code review is far more likely to be applied.</li>
+                <li>No one forgets context ("Why did we write this?") since it's fresh in the author's mind.</li>
+            </ul>
+        </div>
+
+			{% include playbook_cta.html %}
+
+        <nav>
+            <a class="back-to-link" href="/playbook">Back to the Playbook</a>
+        </nav>
+    </div>
 
 </main>

@@ -5,68 +5,46 @@ description: About Dice Media Group
 ---
 
 <main class="application-main-content">
-<header class="single-column-layout">
-<h1 class="title-primary">
+    <header class="single-column-layout">
+        <h1 class="title-primary">
 Continuous Integration
 </h1>
-</header>
-<div class="playbook-content-wrapper single-column-layout">
-<div class="playbook-content"><p>Martin Fowler has an <a href="https://tbot.io/mfowler-ci">extensive description</a> of Continuous Integration. The
-basics are:</p>
+    </header>
+    <div class="playbook-content-wrapper single-column-layout">
+        <div class="playbook-content">
+            <p>Martin Fowler has an <a href="https://tbot.io/mfowler-ci">extensive description</a> of Continuous Integration. The basics are:</p>
 
-<ul>
-<li>We have a test suite that each developer runs on their own machine.</li>
-<li>When they commit their code to a shared version control repository, the tests
-are run again, "integrated" with code from other developers.</li>
-</ul>
+            <ul>
+                <li>We have a test suite that each developer runs on their own machine.</li>
+                <li>When they commit their code to a shared version control repository, the tests are run again, "integrated" with code from other developers.</li>
+            </ul>
 
-<p>This helps ensure there's nothing specific to the developer's machine making
-the tests pass. The code in version control needs to run cleanly in production
-later so before the code is allowed to be deployed to production, it is run on
-a CI server or service.</p>
+            <p>This helps ensure there's nothing specific to the developer's machine making the tests pass. The code in version control needs to run cleanly in production later so before the code is allowed to be deployed to production, it is run on a CI server or service.</p>
 
-<p>When a build fails, we get alerts in Slack and via email. Click the alert and
-we see a backtrace that gives us a hint of how to "fix the build."</p>
+            <p>When a build fails, we get alerts in Slack and via email. Click the alert and we see a backtrace that gives us a hint of how to "fix the build."</p>
 
-<p>When we write the fix and commit to version control again, we'll get a "passing
-build" alert in Slack and via email. Click the alert and we see the passing
-build.</p>
+            <p>When we write the fix and commit to version control again, we'll get a "passing build" alert in Slack and via email. Click the alert and we see the passing build.
+            </p>
 
-<p>Green is good.</p>
+            <p>Green is good.</p>
 
-<p>A solid test suite is an absolute requirement for a web application.
-However, one major problem with test suites is that they get slow as
-they get large.</p>
+            <p>A solid test suite is an absolute requirement for a web application. However, one major problem with test suites is that they get slow as they get large.</p>
 
-<p>CI can ease the pain by distributing the test runs in parallel. We've had 45
-minute test suites cut down to 2 minutes using this technique.</p>
+            <p>CI can ease the pain by distributing the test runs in parallel. We've had 45 minute test suites cut down to 2 minutes using this technique.</p>
 
-<p>We've used CruiseControl, Integrity, Jenkins, and other CI libraries that we
-manage ourselves. This resulted in many hours of expensive attention.</p>
+            <p>We've used CruiseControl, Integrity, Jenkins, and other CI libraries that we manage ourselves. This resulted in many hours of expensive attention.</p>
 
-<p>Now, we use a combination of <a href="http://circleci.com">CircleCI</a> and <a href="http://travis-ci.org">Travis CI</a> (both for
-private repositories and open source) because of their great UIs, simple
-configuration and close integration with GitHub.</p>
+            <p>Now, we use a combination of <a href="http://circleci.com">CircleCI</a> and <a href="http://travis-ci.org">Travis CI</a> (both for private repositories and open source) because of their great UIs, simple configuration and close integration with GitHub.</p>
 
-<p>CI test runs are triggered when we <a href="https://help.github.com/articles/post-receive-hooks">push to Github</a> and can be seen as
-part of the status checks of pull requests. We also use <a href="https://houndci.com/">Hound</a> to help us
-follow our style guide and keep review comments focused on improving the code
-quality.</p>
-</div>
-<div class="playbook-cta">
-<img src="//thoughtbot.com/assets/lyda-c69295eda89922eec4f78dc0d1e8fe8ed9f2dfc885e1ed522b20bc750e5bcab5.jpg" alt="Lyda">
-<div class="playbook-cta-content">
-<h3>Our experienced designers &amp; developers can help.</h3>
-<p>
-In person, small teams, focused sprints. 13 years &amp; 700+
-successful clients.
-</p>
-<a class="button-primary" href="/hire-us">Get in touch</a>
-</div>
-</div>
-<nav>
-<a class="back-to-link" href="/playbook">Back to the Playbook</a>
-</nav>
-</div>
+            <p>CI test runs are triggered when we <a href="https://help.github.com/articles/post-receive-hooks">push to Github</a> and can be seen as part of the status checks of pull requests. We also use <a href="https://houndci.com/">Hound</a> to help us follow our style guide and keep review comments focused on improving the code quality.
+            </p>
+        </div>
+
+			{% include playbook_cta.html %}
+
+        <nav>
+            <a class="back-to-link" href="/playbook">Back to the Playbook</a>
+        </nav>
+    </div>
 
 </main>
