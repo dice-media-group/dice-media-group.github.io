@@ -73,3 +73,64 @@ section.product-design {
 
   }
 }
+
+// content
+// logo
+.application-nav-logo {
+ border-bottom:0;
+ fill:#ed3e44;
+ line-height:1;
+ transition:fill 150ms ease-in-out
+}
+@media screen and (max-width: 890px) {
+ .application-nav-logo {
+  display:inline-block;
+  text-align:center
+ }
+}
+@media screen and (min-width: 890px) {
+ .application-nav-logo {
+  display:block;
+  float:left;
+  margin-left:3rem
+ }
+}
+.logo-on-dark-background .application-nav-logo {
+ fill:#fff
+}
+.quicky_forecast .application-nav-logo {
+ fill:#5DB8F1
+}
+.fixed .application-nav-logo,.mobile-menu .application-nav-logo {
+ fill:#ed3e44
+}
+.application-nav-logo .logo-ralph-and-wordmark {
+ height:39px;
+ width:160px
+}
+@media screen and (max-width: 890px) {
+ .application-nav-logo .logo-ralph-and-wordmark {
+  display:none
+ }
+}
+.application-nav-logo .logo-ralph-only {
+ height:50px;
+ width:50px
+}
+@media screen and (min-width: 890px) {
+ .application-nav-logo .logo-ralph-only {
+  display:none
+ }
+}
+
+
+.org-logo {
+ display:none
+}
+@media screen and (min-width: 860px) {
+ .org-logo {
+  display:block;
+  margin:2em auto 1em;
+  width:5.5em
+ }
+}
