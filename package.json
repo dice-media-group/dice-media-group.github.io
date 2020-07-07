@@ -26,6 +26,6 @@
   "private": true,
   "dependencies": {
     "lodash": "^4.17.15",
-    "npm": "^6.11.2"
+    "npm": "^6.14.6"
   }
 }
